@@ -136,7 +136,7 @@ export type PricingTier = {
 export const pricingTiers: PricingTier[] = [
   {
     name: "Starter",
-    price: "$1,499",
+    price: "$435",
     period: "one-time",
     description:
       "A polished, professional presence for new businesses ready to look the part.",
@@ -146,13 +146,13 @@ export const pricingTiers: PricingTier[] = [
       "Contact form and basic CMS",
       "On-page SEO essentials",
       "2 rounds of revisions",
-      "Launch in 3–4 weeks",
+      "Standard 3–4 week delivery",
     ],
     cta: "Start with Starter",
   },
   {
     name: "Business",
-    price: "$3,999",
+    price: "$735",
     period: "one-time",
     description:
       "Our most popular package — built for growing businesses that need to convert.",
@@ -163,7 +163,7 @@ export const pricingTiers: PricingTier[] = [
       "Conversion-focused copy structure",
       "Analytics and performance tuning",
       "4 rounds of revisions",
-      "Launch in 5–7 weeks",
+      "Standard 5–7 week delivery",
     ],
     cta: "Choose Business",
     highlighted: true,
@@ -183,6 +183,21 @@ export const pricingTiers: PricingTier[] = [
       "Timeline tailored to your scope",
     ],
     cta: "Talk to sales",
+  },
+];
+
+export type AddOn = {
+  name: string;
+  price: string;
+  description: string;
+};
+
+export const addOns: AddOn[] = [
+  {
+    name: "Expedited production",
+    price: "+$100",
+    description:
+      "Skip the line — your site goes into expedited production with delivery in 4–5 business days. Available on any tier.",
   },
 ];
 
