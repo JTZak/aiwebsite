@@ -4,7 +4,9 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { CheckCircle2, Loader2 } from "lucide-react";
+import { CheckCircle2, Loader2, AlertTriangle } from "lucide-react";
+
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xzdweeva";
 
 const schema = z.object({
   name: z.string().min(2, "Please enter your name."),
@@ -21,6 +23,7 @@ type FormValues = z.infer<typeof schema>;
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -38,11 +41,43 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = async (_values: FormValues) => {
-    // TODO: wire to email backend (Resend, Formspree, etc.) when ready.
-    // Example: await fetch("/api/contact", { method: "POST", body: JSON.stringify(_values) })
-    await new Promise((r) => setTimeout(r, 900));
-    setSubmitted(true);
+  const onSubmit = async (values: FormValues) => {
+    setSubmitError(null);
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          company: values.company || "—",
+          projectType: values.projectType,
+          budget: values.budget,
+          message: values.message,
+          _subject: `New project inquiry from ${values.name}`,
+          _replyto: values.email,
+        }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        const detail =
+          data?.errors?.[0]?.message ||
+          "We couldn't send your message. Please try again or email us directly.";
+        throw new Error(detail);
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setSubmitError(
+        err instanceof Error
+          ? err.message
+          : "We couldn't send your message. Please try again or email us directly."
+      );
+    }
   };
 
   if (submitted) {
@@ -133,6 +168,16 @@ export function ContactForm() {
           />
         </Field>
       </div>
+
+      {submitError && (
+        <div
+          role="alert"
+          className="mt-5 flex items-start gap-2 rounded-md border border-red-200 bg-red-50 px-3 py-2.5 text-sm text-red-700"
+        >
+          <AlertTriangle size={16} className="mt-0.5 shrink-0" />
+          <span>{submitError}</span>
+        </div>
+      )}
 
       <button
         type="submit"
