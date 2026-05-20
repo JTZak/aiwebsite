@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -34,12 +35,22 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <Link
             href="/"
-            className="flex items-center gap-2 text-white font-semibold tracking-tight"
+            aria-label={brand.name}
+            className="flex items-center gap-3"
           >
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-electric-600 text-white font-bold">
-              M
+            <span className="grid place-items-center rounded-lg bg-white p-1 shadow-sm">
+              <Image
+                src={brand.logo.src}
+                alt=""
+                width={brand.logo.width}
+                height={brand.logo.height}
+                priority
+                className="h-7 w-7 object-contain"
+              />
             </span>
-            <span className="text-base">{brand.shortName}</span>
+            <span className="hidden sm:inline text-base font-semibold tracking-tight text-white">
+              {brand.shortName}
+            </span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">

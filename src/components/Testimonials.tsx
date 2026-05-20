@@ -10,12 +10,12 @@ export function Testimonials() {
         <SectionHeading
           eyebrow="Kind words"
           title="Trusted by founders, marketers, and owners."
-          subtitle="The work speaks loudest through the people we've shipped for."
+          subtitle="A few words from people we've shipped websites for."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
-            <FadeIn key={t.name} delay={i * 0.08}>
+            <FadeIn key={t.role + i} delay={i * 0.08}>
               <figure className="flex h-full flex-col rounded-2xl border border-slate-200 bg-slate-50 p-8">
                 <Quote
                   size={28}
@@ -27,10 +27,7 @@ export function Testimonials() {
                 </blockquote>
                 <figcaption className="mt-6 border-t border-slate-200 pt-4">
                   <div className="text-sm font-semibold text-navy-900">
-                    {t.name}
-                  </div>
-                  <div className="text-xs text-ink-500">
-                    {t.role}, {t.company}
+                    {t.role}
                   </div>
                 </figcaption>
               </figure>

@@ -7,7 +7,7 @@ import { services, processSteps } from "@/lib/content";
 export const metadata = {
   title: "Services",
   description:
-    "Custom web design, branding and UI/UX, plus maintenance and hosting — delivered by a senior team.",
+    "Custom web design and branding/UI-UX — delivered, handed off, and yours to run.",
 };
 
 export default function ServicesPage() {
@@ -15,8 +15,8 @@ export default function ServicesPage() {
     <>
       <PageHeader
         eyebrow="Services"
-        title="Everything you need to launch and grow online."
-        subtitle="Three focused offerings that cover the full lifecycle of a great website — from first sketch to long-term care."
+        title="Everything you need to launch online."
+        subtitle="Two focused offerings that cover what most projects actually need — from first sketch to a finished site, handed off and yours to run."
       />
 
       <section className="bg-white py-20 sm:py-24">

@@ -10,11 +10,11 @@ export function ServicesPreview() {
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="What we do"
-          title="A focused set of services, delivered with care."
-          subtitle="We keep our offering tight so we can go deep — every engagement is led by senior designers and engineers."
+          title="Focused services, done well."
+          subtitle="Custom websites and brand design — built to your spec, handed off cleanly, yours to run."
         />
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
           {services.map((service, i) => {
             const Icon = service.icon;
             return (

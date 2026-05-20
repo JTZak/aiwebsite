@@ -29,9 +29,9 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 text-lg sm:text-xl leading-relaxed text-slate-300">
-            We design, build, and care for fast, beautiful websites — from
-            scrappy startups to established enterprises. One team, real
-            craftsmanship, real results.
+            We design and build fast, beautiful websites — from a clean
+            one-page site to a fully custom build. One team, real craftsmanship,
+            ready to hand over.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
