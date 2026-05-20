@@ -2,7 +2,6 @@ import type { LucideIcon } from "lucide-react";
 import {
   Palette,
   Sparkles,
-  ShieldCheck,
   ShoppingBag,
   Stethoscope,
   Cpu,
@@ -36,7 +35,7 @@ export const services: Service[] = [
       "Custom desktop, tablet, and mobile layouts",
       "Conversion-focused copy structure",
       "Accessible, semantic HTML and CSS",
-      "CMS setup so your team can edit with confidence",
+      "Editor-friendly CMS so your team can keep content fresh",
       "Launch checklist, analytics, and basic SEO",
     ],
   },
@@ -55,23 +54,6 @@ export const services: Service[] = [
       "Wireframes and interactive prototypes",
       "Component library handoff (Figma)",
       "Usability review and iteration",
-    ],
-  },
-  {
-    slug: "maintenance-hosting",
-    title: "Maintenance & Hosting",
-    icon: ShieldCheck,
-    blurb:
-      "We keep your site fast, secure, and up to date so you can focus on running your business.",
-    description:
-      "Launch day is just the beginning. Our care plans bundle hosting, security patches, content updates, performance monitoring, and a real human you can email when something needs to change.",
-    includes: [
-      "Managed hosting with global CDN",
-      "SSL, backups, and uptime monitoring",
-      "Monthly security and dependency updates",
-      "Content edits and small design changes",
-      "Performance reports and recommendations",
-      "Priority email support",
     ],
   },
 ];
@@ -94,32 +76,24 @@ export const industries: Industry[] = [
 
 export type Testimonial = {
   quote: string;
-  name: string;
   role: string;
-  company: string;
 };
 
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Magnolia rebuilt our site from the ground up and our qualified leads tripled in the first quarter. The whole team is sharp, calm, and genuinely cares about the outcome.",
-    name: "Priya Shah",
+      "They rebuilt our site from the ground up and our qualified leads tripled in the first quarter. Sharp, calm, and genuinely focused on the outcome.",
     role: "Director of Marketing",
-    company: "Northwind Realty",
   },
   {
     quote:
       "They translated our scrappy startup brand into something that finally feels enterprise-ready, without losing what made us us. Worth every dollar.",
-    name: "Marcus Lee",
-    role: "Co-founder",
-    company: "Lattice Health",
+    role: "Startup Co-founder",
   },
   {
     quote:
-      "Working with Magnolia felt like hiring an in-house design team. Clear timelines, beautiful work, and they actually answer their email.",
-    name: "Elena Ortiz",
-    role: "Owner",
-    company: "Ortiz Family Kitchen",
+      "Felt like hiring an in-house design team for a few weeks. Clear timelines, beautiful work, and they actually answer their email.",
+    role: "Small Business Owner",
   },
 ];
 
@@ -135,54 +109,54 @@ export type PricingTier = {
 
 export const pricingTiers: PricingTier[] = [
   {
-    name: "Starter",
-    price: "$435",
+    name: "Essentials",
+    price: "$499",
     period: "one-time",
     description:
-      "A polished, professional presence for new businesses ready to look the part.",
+      "A clean, professional one-page website — perfect for getting online quickly with a strong first impression.",
     features: [
-      "Up to 5 custom-designed pages",
+      "Single-page custom design",
       "Mobile, tablet, and desktop layouts",
-      "Contact form and basic CMS",
+      "Contact form with email delivery",
       "On-page SEO essentials",
       "2 rounds of revisions",
-      "Standard 3–4 week delivery",
+      "Delivered in 2–3 weeks",
     ],
-    cta: "Start with Starter",
+    cta: "Get Essentials",
   },
   {
-    name: "Business",
-    price: "$735",
+    name: "Professional",
+    price: "$999",
     period: "one-time",
     description:
-      "Our most popular package — built for growing businesses that need to convert.",
+      "A multi-page site with deeper personalization, custom interfaces, and interactive features like fillable forms.",
     features: [
-      "Up to 12 custom-designed pages",
+      "Multi-page custom design",
+      "Distinct interfaces tailored to each section",
+      "Fillable forms (booking, intake, quote requests)",
       "Brand refresh and design system",
-      "Advanced CMS with team training",
-      "Conversion-focused copy structure",
-      "Analytics and performance tuning",
+      "Advanced on-page SEO",
       "4 rounds of revisions",
-      "Standard 5–7 week delivery",
+      "Delivered in 3–4 weeks",
     ],
-    cta: "Choose Business",
+    cta: "Choose Professional",
     highlighted: true,
   },
   {
-    name: "Enterprise",
+    name: "Bespoke",
     price: "Custom",
     description:
-      "Multi-site rollouts, e-commerce platforms, and complex integrations for established teams.",
+      "A fully custom website built around your brand — personal photography, testimonials, multiple pages, and integrated payment software.",
     features: [
-      "Unlimited pages and templates",
-      "Custom integrations and APIs",
-      "Dedicated project manager",
-      "Advanced security and compliance",
-      "Quarterly strategy reviews",
-      "Priority support SLA",
-      "Timeline tailored to your scope",
+      "Unlimited custom pages",
+      "Personal photography integration",
+      "Testimonials and portfolio sections",
+      "Integrated payment software (Stripe, etc.)",
+      "Bookings, accounts, or custom workflows",
+      "Brand and content collaboration",
+      "Timeline and pricing tailored to your scope",
     ],
-    cta: "Talk to sales",
+    cta: "Request a quote",
   },
 ];
 
@@ -197,7 +171,7 @@ export const addOns: AddOn[] = [
     name: "Expedited production",
     price: "+$100",
     description:
-      "Skip the line — your site goes into expedited production with delivery in 4–5 business days. Available on any tier.",
+      "Move to the front of the queue. Your project gets priority scheduling and the fastest possible turnaround. Available on any tier.",
   },
 ];
 
@@ -210,32 +184,32 @@ export const faqs: FAQ[] = [
   {
     question: "How long does a typical project take?",
     answer:
-      "Most Starter sites launch in 3–4 weeks, Business sites in 5–7 weeks, and Enterprise projects vary based on scope. We'll give you a firm timeline after our discovery call.",
+      "Essentials sites are delivered in 2–3 weeks and Professional sites in 3–4 weeks. Bespoke projects vary based on scope — we'll give you a firm timeline after the free consultation.",
   },
   {
     question: "What's included in the price?",
     answer:
-      "Strategy, design, development, copy structure, basic SEO, analytics setup, and launch support. Each tier lists exactly what you'll receive, with no surprise add-ons.",
+      "Strategy, design, development, copy structure, basic SEO, and final handover. Each tier lists exactly what you'll receive, with no surprise add-ons.",
   },
   {
     question: "How do revisions work?",
     answer:
-      "Each package includes a set number of revision rounds at the design stage. Additional rounds are billed at our standard hourly rate so you stay in control of the budget.",
+      "Each package includes a set number of revision rounds at the design stage. Additional rounds can be added at our standard hourly rate so you stay in control of the budget.",
   },
   {
-    question: "Do you handle hosting and ongoing updates?",
+    question: "Can I get my project finished faster?",
     answer:
-      "Yes. Our Maintenance & Hosting plans cover managed hosting, security patches, content edits, and performance monitoring so you don't have to think about it.",
+      "Yes — add Expedited production for $100. Your project jumps the queue and receives priority scheduling for the fastest possible turnaround.",
   },
   {
     question: "How do payments work?",
     answer:
-      "We invoice 50% to begin the project and 50% on launch. Enterprise projects are typically split into milestone-based payments. We accept ACH, card, and wire.",
+      "Essentials and Professional are flat one-time payments — 50% to begin the project and 50% before final handover. Bespoke projects are split into milestones. We accept card and ACH.",
   },
   {
     question: "Who owns the site when it's done?",
     answer:
-      "You do — fully. We hand over source files, accounts, and documentation at launch. No lock-in, ever.",
+      "You do — fully. We hand over source files, accounts, and documentation at launch. The site is yours to host and run however you like.",
   },
 ];
 
@@ -244,13 +218,13 @@ export const processSteps = [
     step: "01",
     title: "Discover",
     description:
-      "We learn your business, audience, and goals through a structured kickoff and stakeholder interviews.",
+      "We start with a free consultation to learn your business, audience, and goals — then scope the right package.",
   },
   {
     step: "02",
     title: "Design",
     description:
-      "We craft moodboards, wireframes, and pixel-perfect mockups iterated together until they're right.",
+      "We craft moodboards, wireframes, and pixel-perfect mockups iterated together until they feel right.",
   },
   {
     step: "03",
@@ -260,8 +234,8 @@ export const processSteps = [
   },
   {
     step: "04",
-    title: "Launch",
+    title: "Handover",
     description:
-      "We QA, migrate, and ship — then stay close for the first 30 days to make sure everything sings.",
+      "We QA, migrate, and hand the finished site over with all source files and documentation — it's yours to run.",
   },
 ];

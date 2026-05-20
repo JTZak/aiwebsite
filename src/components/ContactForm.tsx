@@ -99,10 +99,11 @@ export function ContactForm() {
         <Field label="Project type" error={errors.projectType?.message}>
           <select {...register("projectType")} className={inputClass(!!errors.projectType)}>
             <option value="">Select one…</option>
-            <option>New website</option>
-            <option>Redesign</option>
+            <option>Essentials — one-page site</option>
+            <option>Professional — multi-page site</option>
+            <option>Bespoke — fully custom site</option>
             <option>Branding / UI-UX</option>
-            <option>Maintenance & hosting</option>
+            <option>Free consultation</option>
             <option>Something else</option>
           </select>
         </Field>
@@ -113,10 +114,9 @@ export function ContactForm() {
         >
           <select {...register("budget")} className={inputClass(!!errors.budget)}>
             <option value="">Select a range…</option>
-            <option>Under $2,000</option>
-            <option>$2,000 – $5,000</option>
-            <option>$5,000 – $15,000</option>
-            <option>$15,000+</option>
+            <option>$499 — Essentials</option>
+            <option>$999 — Professional</option>
+            <option>$1,000+ — Bespoke / custom quote</option>
             <option>Not sure yet</option>
           </select>
         </Field>

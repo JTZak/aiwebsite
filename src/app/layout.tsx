@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: `%s — ${brand.name}`,
   },
   description:
-    "Magnolia Web Design Services builds modern, fast, beautiful websites for businesses of every size and industry. Custom design, branding, and ongoing care from a team that ships.",
+    "Magnolia Web Design Services builds modern, fast, beautiful websites for businesses of every size and industry. Custom design and branding, delivered and handed off — yours to run.",
   keywords: [
     "web design",
     "web development",

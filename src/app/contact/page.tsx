@@ -1,4 +1,4 @@
-import { Mail, Phone, Clock, MapPin } from "lucide-react";
+import { Mail, Clock, MessageCircle } from "lucide-react";
 import { PageHeader } from "@/components/PageHeader";
 import { ContactForm } from "@/components/ContactForm";
 import { FadeIn } from "@/components/FadeIn";
@@ -18,20 +18,14 @@ const details = [
     href: `mailto:${brand.email}`,
   },
   {
-    icon: Phone,
-    label: "Phone",
-    value: brand.phone,
-    href: `tel:${brand.phone.replace(/[^\d]/g, "")}`,
+    icon: MessageCircle,
+    label: "Free consultation",
+    value: "Available on request",
   },
   {
     icon: Clock,
     label: "Response time",
     value: "Within 1 business day",
-  },
-  {
-    icon: MapPin,
-    label: "Working hours",
-    value: "Mon–Fri, 9am – 6pm ET",
   },
 ];
 
@@ -41,7 +35,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Let's build something great together."
-        subtitle="Tell us about your business and what you're hoping to launch. We reply to every message personally."
+        subtitle="Tell us about your business and what you're hoping to launch. Every project starts with a free consultation — no pressure, no obligation."
       />
 
       <section className="bg-white py-20 sm:py-24">
@@ -68,7 +62,7 @@ export default function ContactPage() {
                       <div className="text-xs font-semibold uppercase tracking-wider text-ink-500">
                         {d.label}
                       </div>
-                      <div className="mt-0.5 text-sm font-medium text-navy-900">
+                      <div className="mt-0.5 text-sm font-medium text-navy-900 break-all">
                         {d.value}
                       </div>
                     </div>
@@ -90,11 +84,12 @@ export default function ContactPage() {
 
             <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6">
               <div className="text-sm font-semibold text-navy-900">
-                Prefer to talk first?
+                What happens next?
               </div>
               <p className="mt-1 text-sm text-ink-700">
-                Book a free 20-minute intro call after sending your message —
-                we&apos;ll include a calendar link in our reply.
+                We reply by email within one business day with a few clarifying
+                questions and a proposed scope. From there we&apos;ll schedule
+                your free consultation to walk through the details.
               </p>
             </div>
           </FadeIn>

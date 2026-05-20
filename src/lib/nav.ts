@@ -10,5 +10,9 @@ export const brand = {
   shortName: "Magnolia",
   tagline: "Modern websites for every business, every industry.",
   email: "magnoliawebdesignservices@gmail.com",
-  phone: "(555) 010-2024",
+  logo: {
+    src: "/magnolia-logo.svg",
+    width: 256,
+    height: 256,
+  },
 } as const;
