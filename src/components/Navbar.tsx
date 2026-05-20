@@ -36,18 +36,16 @@ export function Navbar() {
           <Link
             href="/"
             aria-label={brand.name}
-            className="flex items-center gap-3"
+            className="flex items-center gap-2.5"
           >
-            <span className="grid place-items-center rounded-lg bg-white p-1 shadow-sm">
-              <Image
-                src={brand.logo.src}
-                alt=""
-                width={brand.logo.width}
-                height={brand.logo.height}
-                priority
-                className="h-7 w-7 object-contain"
-              />
-            </span>
+            <Image
+              src={brand.logo.src}
+              alt=""
+              width={brand.logo.width}
+              height={brand.logo.height}
+              priority
+              className="h-9 w-9 object-contain"
+            />
             <span className="hidden sm:inline text-base font-semibold tracking-tight text-white">
               {brand.shortName}
             </span>
