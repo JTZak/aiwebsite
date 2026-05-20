@@ -14,17 +14,16 @@ export function Footer() {
             <Link
               href="/"
               aria-label={brand.name}
-              className="inline-flex items-center gap-2.5"
+              className="inline-flex items-center"
             >
-              <Image
-                src={brand.logo.src}
-                alt=""
-                width={brand.logo.width}
-                height={brand.logo.height}
-                className="h-10 w-10 object-contain"
-              />
-              <span className="font-semibold tracking-tight text-white">
-                {brand.shortName}
+              <span className="grid place-items-center rounded-md bg-white p-2 shadow-sm">
+                <Image
+                  src={brand.logo.src}
+                  alt={brand.name}
+                  width={brand.logo.width}
+                  height={brand.logo.height}
+                  className="h-14 w-14 object-contain"
+                />
               </span>
             </Link>
             <p className="mt-4 text-sm max-w-sm text-slate-400">

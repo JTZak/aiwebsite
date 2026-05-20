@@ -11,8 +11,8 @@ export const brand = {
   tagline: "Modern websites for every business, every industry.",
   email: "magnoliawebdesignservices@gmail.com",
   logo: {
-    src: "/magnolia-logo.svg",
-    width: 256,
-    height: 256,
+    src: "/magnolia-logo.png",
+    width: 1254,
+    height: 1254,
   },
 } as const;
