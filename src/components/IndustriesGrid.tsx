@@ -4,7 +4,7 @@ import { FadeIn } from "./FadeIn";
 
 export function IndustriesGrid() {
   return (
-    <section className="bg-slate-50 py-20 sm:py-28">
+    <section className="bg-mist-100 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Industries we serve"

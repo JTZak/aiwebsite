@@ -55,8 +55,8 @@ export function ContactForm() {
           Thanks — we&rsquo;ll be in touch.
         </h3>
         <p className="mt-2 text-sm text-ink-700 max-w-sm mx-auto">
-          We received your message and will reply within one business day with
-          next steps and any quick questions.
+          We received your message and will reply within 48 hours with next
+          steps and any quick questions.
         </p>
       </div>
     );

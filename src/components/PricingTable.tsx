@@ -10,7 +10,7 @@ export function PricingTable() {
         <FadeIn key={tier.name} delay={i * 0.08} className="h-full">
           <div
             className={`pricing-card group relative flex h-full flex-col rounded-2xl p-8 border transition-all duration-300 ease-out cursor-default
-              hover:-translate-y-2 hover:scale-[1.03] hover:bg-black hover:border-black hover:shadow-2xl hover:shadow-black/40 hover:z-10
+              hover:-translate-y-2 hover:scale-[1.03] hover:bg-navy-950 hover:border-navy-900 hover:shadow-2xl hover:shadow-navy-950/50 hover:z-10
               ${
                 tier.highlighted
                   ? "border-electric-500 bg-gradient-to-b from-navy-900 to-navy-950 text-white shadow-xl shadow-electric-500/20"
@@ -18,7 +18,7 @@ export function PricingTable() {
               }`}
           >
             {tier.highlighted && (
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-electric-500 px-3 py-1 text-xs font-semibold text-white shadow-md shadow-electric-500/40 transition-colors group-hover:bg-white group-hover:text-black">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-electric-500 px-3 py-1 text-xs font-semibold text-white shadow-md shadow-electric-500/40 transition-colors group-hover:bg-electric-500 group-hover:text-white">
                 Most Popular
               </span>
             )}

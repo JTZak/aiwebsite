@@ -5,7 +5,7 @@ import { FadeIn } from "./FadeIn";
 
 export function Testimonials() {
   return (
-    <section className="bg-white py-20 sm:py-28">
+    <section className="bg-mist-50 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Kind words"
@@ -16,7 +16,7 @@ export function Testimonials() {
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <FadeIn key={t.role + i} delay={i * 0.08}>
-              <figure className="flex h-full flex-col rounded-2xl border border-slate-200 bg-slate-50 p-8">
+              <figure className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-8">
                 <Quote
                   size={28}
                   className="text-electric-500/40"

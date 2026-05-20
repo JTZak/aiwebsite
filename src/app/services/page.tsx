@@ -19,7 +19,7 @@ export default function ServicesPage() {
         subtitle="Two focused offerings that cover what most projects actually need — from first sketch to a finished site, handed off and yours to run."
       />
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-mist-50 py-20 sm:py-24">
         <div className="mx-auto max-w-5xl px-6 lg:px-8 space-y-16">
           {services.map((service, i) => {
             const Icon = service.icon;
@@ -43,7 +43,7 @@ export default function ServicesPage() {
                     </p>
                   </div>
                   <div className="lg:col-span-7">
-                    <div className="rounded-2xl border border-slate-200 bg-slate-50 p-7">
+                    <div className="rounded-2xl border border-slate-200 bg-mist-100 p-7">
                       <div className="text-xs font-semibold uppercase tracking-[0.16em] text-electric-600">
                         What&rsquo;s included
                       </div>
@@ -67,7 +67,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50 py-20 sm:py-24">
+      <section className="bg-mist-100 py-20 sm:py-24">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <FadeIn className="max-w-2xl mx-auto text-center">
             <div className="text-xs font-semibold uppercase tracking-[0.18em] text-electric-600">

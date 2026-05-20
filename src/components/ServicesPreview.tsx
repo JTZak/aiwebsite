@@ -6,7 +6,7 @@ import { FadeIn } from "./FadeIn";
 
 export function ServicesPreview() {
   return (
-    <section className="bg-white py-20 sm:py-28">
+    <section className="bg-mist-50 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="What we do"

@@ -16,13 +16,17 @@
   --color-ink-900: #0a1128;
   --color-ink-700: #334155;
   --color-ink-500: #64748b;
+  /* Cool, blue-tinted off-white — softer than pure white, ties into the navy theme. */
+  --color-mist-50: #f4f7fc;
+  --color-mist-100: #e8eff8;
+  --color-mist-200: #d6e0ee;
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-inter);
 }
 
 :root {
-  --background: #ffffff;
+  --background: #f4f7fc;
   --foreground: #0a1128;
 }
 

@@ -7,7 +7,7 @@ import { brand } from "@/lib/nav";
 export const metadata = {
   title: "Contact",
   description:
-    "Tell us about your project — we'll reply within one business day with next steps.",
+    "Tell us about your project — we'll reply within 48 hours with next steps.",
 };
 
 const details = [
@@ -25,7 +25,7 @@ const details = [
   {
     icon: Clock,
     label: "Response time",
-    value: "Within 1 business day",
+    value: "Within 48 hours",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function ContactPage() {
         subtitle="Tell us about your business and what you're hoping to launch. Every project starts with a free consultation — no pressure, no obligation."
       />
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-mist-50 py-20 sm:py-24">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 grid gap-12 lg:grid-cols-12 items-start">
           <FadeIn className="lg:col-span-5">
             <h2 className="text-2xl font-semibold tracking-tight text-navy-900">
@@ -82,12 +82,12 @@ export default function ContactPage() {
               })}
             </ul>
 
-            <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <div className="mt-10 rounded-2xl border border-slate-200 bg-mist-100 p-6">
               <div className="text-sm font-semibold text-navy-900">
                 What happens next?
               </div>
               <p className="mt-1 text-sm text-ink-700">
-                We reply by email within one business day with a few clarifying
+                We reply by email within 48 hours with a few clarifying
                 questions and a proposed scope. From there we&apos;ll schedule
                 your free consultation to walk through the details.
               </p>

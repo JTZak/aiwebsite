@@ -13,7 +13,7 @@ type CTASectionProps = {
 
 export function CTASection({
   title = "Ready to build something great?",
-  subtitle = "Tell us about your business and we'll come back with a tailored plan within one business day.",
+  subtitle = "Tell us about your business and we'll come back with a tailored plan within 48 hours.",
   primaryHref = "/contact",
   primaryLabel = "Start your project",
   secondaryHref = "/pricing",
