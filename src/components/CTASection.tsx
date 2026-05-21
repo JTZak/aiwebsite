@@ -28,7 +28,14 @@ export function CTASection({
               className="absolute inset-0 bg-grid opacity-40"
               aria-hidden
             />
-            <div className="absolute -top-20 left-1/2 -translate-x-1/2 h-40 w-[120%] bg-electric-500/20 blur-3xl" aria-hidden />
+            <div
+              className="absolute -top-20 left-1/2 -translate-x-1/2 h-40 w-[120%] blur-3xl"
+              aria-hidden
+              style={{
+                background:
+                  "linear-gradient(90deg, rgba(168, 85, 247, 0.28), rgba(236, 72, 153, 0.22))",
+              }}
+            />
             <div className="relative">
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">
                 {title}
@@ -39,7 +46,7 @@ export function CTASection({
               <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
                   href={primaryHref}
-                  className="group inline-flex items-center justify-center gap-2 rounded-md bg-electric-500 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-electric-500/30 transition-all hover:bg-electric-400 hover:-translate-y-0.5"
+                  className="group inline-flex items-center justify-center gap-2 rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-fuchsia-500/30 transition-all hover:from-violet-400 hover:to-fuchsia-400 hover:-translate-y-0.5"
                 >
                   {primaryLabel}
                   <ArrowRight

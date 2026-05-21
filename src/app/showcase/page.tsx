@@ -6,7 +6,6 @@ import { AutoChart } from "@/components/showcase/AutoChart";
 import { AutoCarousel } from "@/components/showcase/AutoCarousel";
 import { AutoToasts } from "@/components/showcase/AutoToasts";
 import { AutoTabs } from "@/components/showcase/AutoTabs";
-import { AutoCounters } from "@/components/showcase/AutoCounters";
 import { CTASection } from "@/components/CTASection";
 import { FadeIn } from "@/components/FadeIn";
 
@@ -52,12 +51,6 @@ const demos = [
     description:
       "Animated tab switches with a sliding indicator pill and seamless content transitions.",
     component: <AutoTabs />,
-  },
-  {
-    title: "live-counters.tsx",
-    description:
-      "Smooth number counters and stat tiles that animate as visitors scroll into view.",
-    component: <AutoCounters />,
   },
 ];
 

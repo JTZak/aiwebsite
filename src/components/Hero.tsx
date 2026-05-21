@@ -22,7 +22,7 @@ export function Hero() {
 
           <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-white">
             Modern websites for{" "}
-            <span className="bg-gradient-to-r from-electric-400 to-electric-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-violet-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent">
               every business
             </span>
             , every industry.
@@ -37,7 +37,7 @@ export function Hero() {
           <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/contact"
-              className="group inline-flex items-center justify-center gap-2 rounded-md bg-electric-500 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-electric-500/30 transition-all hover:bg-electric-400 hover:shadow-electric-400/40 hover:-translate-y-0.5"
+              className="group inline-flex items-center justify-center gap-2 rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-fuchsia-500/30 transition-all hover:from-violet-400 hover:to-fuchsia-400 hover:shadow-fuchsia-400/40 hover:-translate-y-0.5"
             >
               Start your project
               <ArrowRight

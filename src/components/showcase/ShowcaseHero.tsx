@@ -3,11 +3,11 @@
 import { motion } from "framer-motion";
 
 const shapes = [
-  { x: "8%", y: "20%", size: 140, delay: 0, color: "#3b82f6" },
-  { x: "85%", y: "30%", size: 200, delay: 1.2, color: "#60a5fa" },
-  { x: "20%", y: "75%", size: 100, delay: 0.6, color: "#2563eb" },
-  { x: "75%", y: "80%", size: 160, delay: 1.8, color: "#93c5fd" },
-  { x: "50%", y: "15%", size: 80, delay: 0.3, color: "#3b82f6" },
+  { x: "8%", y: "20%", size: 140, delay: 0, color: "#a855f7" },
+  { x: "85%", y: "30%", size: 200, delay: 1.2, color: "#ec4899" },
+  { x: "20%", y: "75%", size: 100, delay: 0.6, color: "#c026d3" },
+  { x: "75%", y: "80%", size: 160, delay: 1.8, color: "#d8b4fe" },
+  { x: "50%", y: "15%", size: 80, delay: 0.3, color: "#e879f9" },
 ];
 
 export function ShowcaseHero() {
@@ -55,12 +55,12 @@ export function ShowcaseHero() {
           <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-white">
             A taste of what we can{" "}
             <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-electric-400 via-electric-300 to-electric-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-violet-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent">
                 build for you
               </span>
               <motion.span
                 aria-hidden
-                className="absolute -bottom-1 left-0 h-[3px] w-full origin-left rounded-full bg-gradient-to-r from-electric-400 to-electric-300"
+                className="absolute -bottom-1 left-0 h-[3px] w-full origin-left rounded-full bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}

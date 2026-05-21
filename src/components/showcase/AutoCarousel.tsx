@@ -7,22 +7,22 @@ const slides = [
   {
     title: "Summer Collection",
     subtitle: "Now available",
-    gradient: "linear-gradient(135deg, #2563eb 0%, #60a5fa 100%)",
+    gradient: "linear-gradient(135deg, #9333ea 0%, #ec4899 100%)",
   },
   {
     title: "Bold Typography",
     subtitle: "Designed to convert",
-    gradient: "linear-gradient(135deg, #1d3380 0%, #3b82f6 100%)",
+    gradient: "linear-gradient(135deg, #2a1f5e 0%, #a855f7 100%)",
   },
   {
     title: "Smooth Interactions",
     subtitle: "Crafted with care",
-    gradient: "linear-gradient(135deg, #0f1a3d 0%, #2563eb 100%)",
+    gradient: "linear-gradient(135deg, #1d1640 0%, #c026d3 100%)",
   },
   {
     title: "Pixel Perfect",
     subtitle: "On every device",
-    gradient: "linear-gradient(135deg, #16245a 0%, #60a5fa 100%)",
+    gradient: "linear-gradient(135deg, #3b2a82 0%, #f0abfc 100%)",
   },
 ];
 

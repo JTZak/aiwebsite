@@ -72,7 +72,7 @@ export function Navbar() {
             })}
             <Link
               href="/contact"
-              className="ml-2 inline-flex items-center rounded-md bg-electric-500 px-4 py-2 text-sm font-medium text-white shadow-sm shadow-electric-500/30 transition-all hover:bg-electric-400 hover:shadow-electric-400/40"
+              className="ml-2 inline-flex items-center rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500 px-4 py-2 text-sm font-medium text-white shadow-sm shadow-fuchsia-500/30 transition-all hover:from-violet-400 hover:to-fuchsia-400 hover:shadow-fuchsia-400/40"
             >
               Start a project
             </Link>
@@ -113,7 +113,7 @@ export function Navbar() {
               })}
               <Link
                 href="/contact"
-                className="mt-1 inline-flex items-center justify-center rounded-md bg-electric-500 px-4 py-2 text-sm font-medium text-white hover:bg-electric-400"
+                className="mt-1 inline-flex items-center justify-center rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500 px-4 py-2 text-sm font-medium text-white hover:from-violet-400 hover:to-fuchsia-400"
               >
                 Start a project
               </Link>

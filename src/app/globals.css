@@ -1,33 +1,45 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy-950: #05080f;
-  --color-navy-900: #0a1128;
-  --color-navy-800: #0f1a3d;
-  --color-navy-700: #16245a;
-  --color-navy-600: #1d3380;
-  --color-electric-50: #eff6ff;
-  --color-electric-100: #dbeafe;
-  --color-electric-200: #bfdbfe;
-  --color-electric-300: #93c5fd;
-  --color-electric-400: #60a5fa;
-  --color-electric-500: #3b82f6;
-  --color-electric-600: #2563eb;
-  --color-ink-900: #0a1128;
-  --color-ink-700: #334155;
-  --color-ink-500: #64748b;
-  /* Cool, blue-tinted off-white — softer than pure white, ties into the navy theme. */
-  --color-mist-50: #f4f7fc;
-  --color-mist-100: #e8eff8;
-  --color-mist-200: #d6e0ee;
+  /* Deep plum-violet — warmer than pure navy, ties to the logo gradient. */
+  --color-navy-950: #0d0820;
+  --color-navy-900: #14102b;
+  --color-navy-800: #1d1640;
+  --color-navy-700: #2a1f5e;
+  --color-navy-600: #3b2a82;
+
+  /* Brand primary — violet/purple from the logo's left edge. */
+  --color-electric-50: #faf5ff;
+  --color-electric-100: #f3e8ff;
+  --color-electric-200: #e9d5ff;
+  --color-electric-300: #d8b4fe;
+  --color-electric-400: #c084fc;
+  --color-electric-500: #a855f7;
+  --color-electric-600: #9333ea;
+
+  /* Magenta/pink — logo's right edge, used sparingly as a secondary accent. */
+  --color-blossom-300: #f5b8e1;
+  --color-blossom-400: #ec4899;
+  --color-blossom-500: #d946ef;
+  --color-blossom-600: #c026d3;
+
+  /* Text neutrals — slightly warm, no longer cold slate. */
+  --color-ink-900: #14102b;
+  --color-ink-700: #3f3a52;
+  --color-ink-500: #6e6880;
+
+  /* Light surface — warm cream-lavender. Single tone for every "light" section, replaces stark white. */
+  --color-mist-50: #fbf8fd;
+  --color-mist-100: #f4eef9;
+  --color-mist-200: #e7dcef;
 
   --font-sans: var(--font-inter);
   --font-display: var(--font-inter);
 }
 
 :root {
-  --background: #f4f7fc;
-  --foreground: #0a1128;
+  --background: #fbf8fd;
+  --foreground: #14102b;
 }
 
 html {
@@ -44,15 +56,17 @@ body {
 }
 
 ::selection {
-  background: #3b82f6;
+  background: #a855f7;
   color: #ffffff;
 }
 
+/* Dark hero glow — violet/pink radials over deep plum, mirroring the logo gradient. */
 .bg-hero-glow {
   background:
-    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(59, 130, 246, 0.35), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 90% 110%, rgba(96, 165, 250, 0.2), transparent 60%),
-    linear-gradient(180deg, #05080f 0%, #0a1128 60%, #0f1a3d 100%);
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(168, 85, 247, 0.38), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 110%, rgba(236, 72, 153, 0.24), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 10% 100%, rgba(217, 70, 239, 0.18), transparent 60%),
+    linear-gradient(180deg, #0d0820 0%, #14102b 60%, #1d1640 100%);
 }
 
 .bg-grid {
@@ -60,4 +74,12 @@ body {
     linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 48px 48px;
+}
+
+/* Logo-mirror gradient for accent text and decorative strokes. */
+.text-brand-gradient {
+  background: linear-gradient(90deg, #c084fc 0%, #e879f9 50%, #f0abfc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
