@@ -11,9 +11,21 @@ export const brand = {
   shortName: "Magnolia",
   tagline: "Modern websites for every business, every industry.",
   email: "magnoliawebdesignservices@gmail.com",
+  url: "https://www.magnoliawebdesignservices.net",
   logo: {
     src: "/magnolia-logo.png",
     width: 1254,
     height: 1254,
+  },
+  location: {
+    // Magnolia is the Mississippi state flower — the brand is rooted in the South.
+    baseRegion: "Mississippi",
+    areaServedLabel: "Mississippi, Memphis & across the South",
+    serviceAreas: [
+      "Mississippi",
+      "Memphis, TN",
+      "Tennessee",
+      "the Southern United States",
+    ],
   },
 } as const;
