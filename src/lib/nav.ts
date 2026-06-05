@@ -12,6 +12,7 @@ export const brand = {
   tagline: "Modern websites for every business, every industry.",
   email: "magnoliawebdesignservices@gmail.com",
   url: "https://www.magnoliawebdesignservices.net",
+  facebook: "https://www.facebook.com/profile.php?id=61590578643622",
   logo: {
     src: "/magnolia-logo.png",
     width: 1254,

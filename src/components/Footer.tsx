@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail } from "lucide-react";
+import { Mail, Facebook } from "lucide-react";
 import { navLinks, brand } from "@/lib/nav";
 
 export function Footer() {
@@ -30,6 +30,9 @@ export function Footer() {
               {brand.tagline} We design and build websites that help businesses
               of every size and industry get online and look the part.
             </p>
+            <p className="mt-3 text-sm font-medium text-slate-300">
+              Serving {brand.location.areaServedLabel}.
+            </p>
           </div>
 
           <div>
@@ -58,6 +61,17 @@ export function Footer() {
                   className="hover:text-white break-all"
                 >
                   {brand.email}
+                </a>
+              </li>
+              <li className="flex items-start gap-2 text-slate-400">
+                <Facebook size={14} className="mt-1 text-electric-400" />
+                <a
+                  href={brand.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white"
+                >
+                  Follow us on Facebook
                 </a>
               </li>
               <li className="text-slate-400">
