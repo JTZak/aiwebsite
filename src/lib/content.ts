@@ -204,12 +204,12 @@ export const faqs: FAQ[] = [
   {
     question: "How do payments work?",
     answer:
-      "Essentials and Professional are flat one-time payments — 50% to begin the project and 50% before final handover. Bespoke projects are split into milestones. We accept card and ACH.",
+      "Payment is due once your website is finished and you've approved it. We launch the site, send you an invoice, and the full balance is due on completion. As soon as payment clears, the domain and website are transferred to you. We accept card and ACH.",
   },
   {
     question: "Who owns the site when it's done?",
     answer:
-      "You do — fully. We hand over source files, accounts, and documentation at launch. The site is yours to host and run however you like.",
+      "You do — fully. The domain and website remain ours until the invoice is paid in full, and the moment it clears we transfer the domain and hand over source files, accounts, and documentation. From there the site is yours to host and run however you like.",
   },
 ];
 
